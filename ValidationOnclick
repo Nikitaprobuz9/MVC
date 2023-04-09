@@ -1,0 +1,70 @@
+
+@{
+    ViewBag.Title = "day1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>day1</h2>
+
+
+<input type="text" data-any="active" name="name"    id="txtname"  class="input-box" placeholder="Enter name...." value="" />
+<input type="text" data-any="" name="age" id="txtage" class="input-box" placeholder="Enter age...." value="" />
+<input type="text" data-any="" name="address" id="txtaddress" class="input-box" placeholder="Enter address...." value="" />
+<input type="text" data-any="" name="pincode" id="txtpincode" class="input-box" placeholder="Enter Pincode...." value="" />
+<input type="text" data-any="" name="mobile" id="txtmobile" class="input-box" placeholder="Enter mobile...." value="" />
+<input type="text" data-any="" name="state" id="txtstate" class="input-box" placeholder="Enter state...." value="" />
+<input type="button"     id="txtget"  value="GET DATA" />
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+
+<script type="text/javascript">
+
+    $('#txtget').click(function () {
+        let name = $('#txtname');
+        let age = $('#txtage');
+        let address = $('#txtaddress');
+        let pincode = $('#txtpincode');
+        let mobile = $('#txtmobile');
+        let state = $('#txtstate');
+
+        if ($(name).val() == '') {
+            $(name).css('border-color', 'red')
+        } else {
+            $(name).css('border-color', '')
+        }
+
+        if ($(age).val() == '') {
+            $(age).css('border-color', 'red')
+       } else {
+            $(age).css('border-color', '')
+       }
+
+        if ($(address).val() == '') {
+            $(address).css('border-color', 'red')
+        } else {
+           $(address).css('border-color', '')
+        }
+
+        if ($(pincode).val() == '') {
+           $(pincode).css('border-color', 'red')
+       } else {
+            $(pincode).css('border-color', '')
+        }
+
+       if ($(mobile).val() == '') {
+            $(mobile).css('border-color', 'red')
+       } else {
+          $(mobile).css('border-color', '')
+     }
+
+      if ($(state).val() == '') {
+         $(state).css('border-color', 'red')
+       } else {
+           $(state).css('border-color', '')
+       }
+
+    });
+
+</script>
